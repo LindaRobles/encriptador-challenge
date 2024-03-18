@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+
+<body class="body-container">
+
+    <header>
+        <div class="header-logo">
+            <img src="imgs/logo_alura.png" alt="Alura">
+        </div>
+    </header>
+    
+    <main class="encoder-container">
+        <section class="left-area">
+            <div class="encrypt-area">
+                <h1>Encriptador de texto</h1>
+                <h4>Ingresa el texto que quieras codificar</h4>
+                <textarea class="textoUsuario" placeholder="Escribe acá tu texto :]"></textarea>
+                <div class="encoder-msj">
+                    <p class="text-alerta">*En minúsculas y sin acentos o caracteres especiales</p>
+                </div>
+                <div class="buttons">
+                    <button class="btn-encripta" onclick="btnEncripta()"><i class="fas fa-key"></i> Encriptar</button>
+                    <button class="btn-desencripta" onclick="btnDesencripta()">Desencriptar</button>
+                    <button class="btn-reinicio" onclick="btnReiniciar()">Reiniciar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="right-area">
+            <div class="decrypt-area">
+                <div class="cats-displays">
+                    <img id="cat-inicial" src="imgs/undraw_cat_epte.svg" alt="cat-inicial">
+                    <img id="cat-final" src="imgs/undraw_playful_cat_re_ac9g.svg" alt="cat-final">
+                </div>                
+                <textarea disabled class="decrypt-text"></textarea>
+                <div class="decrypt-input">
+                </div>
+                <button class="btn-copiar" onclick="btnCopiar()">Copiar!</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="contact">
+        <p>&copy Copyright Linda Robles</p>
+        <!-- Enlaces de redes sociales -->
+        <a href="https://github.com/LindaRobles"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/linda-robles-/"><i class="fab fa-linkedin"></i></a>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

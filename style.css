@@ -1,0 +1,345 @@
+body {
+    font-family: 'Share Tech Mono', monospace;
+    background: #bbbbbb;
+  }
+  
+  /* Logo */
+  .header-logo {
+    display: flex;
+    margin: 5vh 0 1vh -2vh;
+    height: 6vh;
+  }
+  
+  /* main */
+  .encoder-container {
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem;
+    height: 80vh;
+  }
+  
+  /* Estilos del área de encriptación */
+  .left-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 80vh;
+  }
+  
+  /* Estilos del área de encriptación */
+  .left-area h1 {
+    color: #6c63ff;
+    font-size: 3rem;
+    padding: .5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  
+  .left-area h4 {
+    color: rgb(65, 65, 65);
+    margin-top: 0;
+    padding: .5rem;
+    font-size: 1.5rem;
+  }
+  
+  .encoder-msj .text-alerta {
+    color: #858585;
+    font-size: 1rem;
+  }
+  
+  /* Estilos de los botones */
+  .buttons button {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  /* Estilos del área de mensaje de alerta */
+  .encoder-msj {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5vh;
+  }
+  
+  .icono-llave {
+    display: flex;
+    align-items: center;
+    margin-right: 3vh;
+  }
+  
+  .cats-displays img {
+    width: 65vh;
+    height: auto;
+  }
+  
+  /* Estilos del texto de alerta */
+  .text-alerta {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Estilos del área de desencriptación */
+  .right-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 80vh;
+  }
+  
+  /* Estilos de los botones */
+  .buttons button {
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 0.5rem;
+  }
+  
+  .buttons button.btn-encripta {
+    background-color: #ff6584;
+  }
+  
+  .buttons button:hover {
+    background-color: #dddddd;
+  }
+  
+  /* Estilos del botón de copiar */
+  .btn-copiar {
+    font-family: 'Share Tech Mono', monospace;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #6c63ff;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    margin-top: 1rem; 
+  }
+  
+  
+  .btn-copiar:hover {
+    background-color: #dddddd;
+  }
+  
+  /* Estilos del footer */
+  .contact {
+    margin-top: 2rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 3rem; 
+  }
+  
+  .contact p {
+    margin: 0; 
+    margin-right: 10px; 
+  }
+  
+  .contact a {
+    display: inline-block;  
+    text-decoration: none; 
+    color: #6c63ff; 
+  }
+  
+  .contact a:hover {
+    color: #ff6584; 
+  }
+  
+  .contact i {
+    font-size: 2.5vh; 
+    margin-right: 0.8vh; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .contact i:hover {
+    transform: scale(1.2); 
+  }
+  
+  /* Animación de hover */
+  .contact i:hover {
+    transform: scale(1.2);
+    color: #4b42c7;
+  }
+  
+  .encrypt-area,
+  .decrypt-area {
+    width: 90%;
+    height: 69vh;
+    border-radius: 1.5rem;
+    padding: 1.3rem;
+    background-color: #efefef;
+    box-shadow: 5px 3px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .encrypt-area textarea,
+  .decrypt-area textarea {
+    width: 85%;
+    height: 5rem;
+    font-size: 1.3rem;
+    border-radius: 1.2rem;
+    padding: 0.7rem;
+    background-color: #efefef;
+    border: 1.5px solid #e1e1e1;
+    margin-bottom: 1rem; 
+  }
+  
+  /* Placeholder y el txt area */
+  .encrypt-area textarea::placeholder,
+  .decrypt-area textarea::placeholder {
+    text-align: left;
+    line-height: 1em;
+    font-size: 1.3rem;
+    color: #848484;
+  }
+  
+  /* Ocultar cat-final por defecto */
+  .decrypt-area img:last-child {
+    display: none;
+  }
+  
+  /* ------------------------- Media Queries --------------------------- */
+  
+  /* Para dispositivos móviles */
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 1rem; 
+    }
+  
+    .header-logo img {
+      width: 5rem; 
+      height: 2rem;
+      padding: 1.2rem;
+    }
+  
+    .encoder-container {
+      flex-direction: column; 
+      max-width: 45svh;
+      height: auto; 
+      padding: 1rem; 
+      align-items: center;
+    }
+  
+    .left-area,
+    .right-area {
+      width: 90%; 
+      margin-left: 0; 
+    }
+  
+    .left-area h1 {
+      color: #6c63ff;
+      font-size: 2rem;
+      padding: .5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    
+    .left-area h4 {
+      color: rgb(65, 65, 65);
+      margin-top: 0;
+      font-size: 1rem;
+      padding: .5rem;
+    }
+  
+    .encrypt-area textarea,
+    .decrypt-area textarea {
+      display: flex;
+      flex-direction: column;
+      background: #d8dfe8;
+      max-width: 37svh;
+      padding: 2.5svh;
+      align-items: center;
+    }
+  
+    .cats-displays img {
+      max-width: 100%; 
+      height: auto; 
+      margin-bottom: 1rem; 
+      padding: 0.5rem; 
+    }
+  
+    .buttons button {
+      font-size:  1.8svh; 
+      padding: 0.5rem 1rem; 
+    }
+  }
+  
+    .btn-copiar {
+      font-size: 2.5svh;
+      padding: 0.5rem 1rem;
+    }
+  
+  
+  /* Media query para tablets */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 1rem; 
+    }
+  
+    .header-logo img {
+      width: 8rem; 
+    }
+  
+    .encoder-container {
+      flex-direction: column; 
+      max-width: 70svh;
+      height: auto; 
+      padding: 1rem; 
+      align-items: center;
+    }
+  
+    .left-area,
+    .right-area {
+      width: 90%; 
+      margin-left: 0; 
+    }
+  
+    .left-area h1 {
+      color: #6c63ff;
+      font-size: 2.9rem;
+      padding: .5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
+    
+    .left-area h4 {
+      color: rgb(65, 65, 65);
+      margin-top: 0;
+      font-size: 1.4rem;
+      padding: .5rem;
+    }
+  
+    .encrypt-area textarea,
+    .decrypt-area textarea {
+      display: flex;
+      flex-direction: column;
+      background: #d8dfe8;
+      max-width: 57svh;
+      padding: 2.5svh;
+      align-items: ;
+    }
+  
+    .cats-displays img {
+      max-width: 100%; 
+      height: auto; 
+      margin-bottom: 1rem; 
+      padding: 0.5rem; 
+    }
+  
+    .buttons button {
+      font-size:  1.8svh; 
+      padding: 0.5rem 1rem; 
+    }
+  }
+  
+  .btn-copiar {
+    font-size: 1.8svh;
+    padding: 0.5rem 1rem;
+  }
+  
