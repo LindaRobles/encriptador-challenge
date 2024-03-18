@@ -112,3 +112,6 @@ async function btnCopiar() {
         alert("Lo siento, no se pudo copiar el texto al portapapeles.");
     }
 }
+
+
+// intento deployment
