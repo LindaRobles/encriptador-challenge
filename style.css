@@ -226,7 +226,8 @@ body {
   
     .left-area,
     .right-area {
-      width: 90%; 
+      width: 90%;
+      min-height: 50%; 
       margin-left: 0; 
     }
   
